@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: SofadiOne;
+}
+
+.heading-text {
+    font-size: 3rem;
+}
+
+.sub-heading-text {
+    font-size: 2rem;
+}
+
+.content-text {
+    font-size: 1.5rem;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+:root {
+    --primary-color: #007CF8;
+    --secondary-color: #2ecc71;
+    --button-color: #EE628A;
+    --primary-text-color: #fff;
+    --secondary-text-color: #000;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1400px;
+    /* background-color: yellow; */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.red-btn {
+    background-color: var(--button-color);
+    color: var(--primary-text-color);
+}
+
+.blue-btn {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+
+/* --------------------------------- Header --------------------------------- */
+.header {
+    background-color: var(--primary-color);
+}
+
+.header .container {
+    padding: 20px;
+}
+
+.header .logo img {
+    width: 15rem;
+    background-color: white;
+    border-radius: 10rem;
+    padding: 0.5rem;
+}
+
+.navbar nav ul,
+.navbar nav .btns {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.btns .red-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.navbar nav ul a {
+    color: var(--primary-text-color);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar nav ul a:hover {
+    background: rgba(188, 188, 255, 0.391);
+    border-radius: 1rem;
+}
+
+/* --------------------------------- Banner --------------------------------- */
+.banner {
+    background-color: var(--primary-color);
+    border-radius: 0 0 10rem 10rem;
+    position: relative;
+}
+
+.banner .container {
+   padding: 8rem 1rem 15rem;
+}
+
+.banner .banner-content,
+.banner .banner-image {
+    width: 50%;
+}
+
+.banner .banner-content {
+    padding: 1rem;
+    color: var(--primary-text-color);
+}
+
+.banner-content h6,
+.banner-content h2 {
+    text-transform: uppercase;
+}
+
+.banner-content h6 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.banner-content h2 {
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.banner-content h2::after {
+    position: absolute;
+    background-image: url(../images/underline.png);
+    width: 12rem;
+    height: 0.7rem;
+    content: '';
+    left: 8.5rem;
+    bottom: 0;
+}
+
+.banner-content p {
+    font-size: 1.25rem;
+    margin-bottom: 4rem;
+    text-align: justify;
+}
+
+.input-data {
+    position: relative;
+    width: 80%;
+}
+
+.banner-content input {
+    font-family: SofadiOne;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    width: 100%;
+}
+
+.banner-content button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-family: 'SofadiOne';
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-content button:hover {
+    background-color: var(--primary-color);
+}
+
+.banner .banner-image {
+    position: relative;
+    text-align: end;
+}
+
+.banner .banner-image img {
+    border-radius: 2rem;
+}
+
+.banner-image p {
+    position: absolute;
+    font-weight: 700;
+}
+
+.banner-image .blue-btn {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+
+.banner-image .red-btn {
+    bottom: -2rem;
+    left: 15rem;
+    padding: 2.25rem 1rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #00000066;
+}
+
+/* ------------------------------ card section ------------------------------ */
+.cards-wrap {
+    position: absolute;
+    bottom: -12rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 23%;
+    padding: 2rem 5rem;
+    box-shadow: 2px 2px 10px #0000004f;
+    border-radius: 2rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.card img {
+    padding: 1.5rem;
+}
+
+.card p {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
