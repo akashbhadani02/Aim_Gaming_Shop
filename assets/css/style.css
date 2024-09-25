@@ -35,12 +35,12 @@ body {
     --button-color: #EE628A;
     --primary-text-color: #fff;
     --secondary-text-color: #000;
+    --background-color: #eeeeee;
 }
 
 .container {
     margin: 0 auto;
     width: 1400px;
-    /* background-color: yellow; */
 }
 
 ul {
@@ -67,10 +67,70 @@ a {
     color: var(--primary-text-color);
 }
 
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
 
 /* --------------------------------- Header --------------------------------- */
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: var(--primary-color);
+    z-index: 1;
+    box-shadow: 0px 1px 2rem #0000002e;
 }
 
 .header .container {
@@ -111,10 +171,12 @@ a {
     background-color: var(--primary-color);
     border-radius: 0 0 10rem 10rem;
     position: relative;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 
 .banner .container {
-   padding: 8rem 1rem 15rem;
+    padding: 8rem 1rem 15rem;
 }
 
 .banner .banner-content,
@@ -252,10 +314,156 @@ a {
 
 .card img {
     padding: 1.5rem;
+    margin: 2.5px;
 }
 
 .card p {
     font-size: 1.25rem;
     text-transform: uppercase;
     font-weight: 800;
+}
+
+/* ------------------------------ Tranding card ----------------------------- */
+.tranding_game {
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.tranding_game .container,
+.top-games-heading .container {
+    padding: 0 1rem;
+}
+
+.tranding-heading,
+.top-games-heading {
+    margin-bottom: 5rem;
+}
+
+.tranding-heading h6,
+.top-games-heading h6 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--button-color);
+    margin-bottom: .5rem;
+}
+
+.tranding-heading h2,
+.top-games-heading h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.tranding-heading a.red-btn,
+.top-games-heading a.red-btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5rem;
+    text-transform: capitalize;
+}
+
+.tranding-card-wrapper {
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.tranding-card {
+    background-color: var(--background-color);
+    border-radius: 2rem;
+}
+
+.tranding-card .card-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.tranding-card .card-img p {
+    top: 1rem;
+    right: 1rem;
+    flex-direction: column;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    gap: 0.25rem;
+}
+
+.tranding-card .card-img p span strike {
+    font-size: 1rem;
+}
+
+.card-content {
+    padding: 1rem 2rem 2rem;
+}
+
+.card-content div p:first-child,
+.top-game-content p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--button-color);
+    margin-bottom: 0.25rem;
+}
+
+.card-content div p:last-child {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.card-content span.red-btn {
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.card-content span.red-btn a {
+    color: var(--primary-text-color);
+}
+
+/* ---------------------------- Top Games section --------------------------- */
+.top-games {
+    background-color: var(--background-color);
+    padding: 8rem 0;
+    border-radius: 10rem;
+    margin-bottom: 15rem;
+}
+
+.top-games-wrapper {
+    gap: 1.5rem;
+}
+
+.top-game-card {
+    border-radius: 2rem;
+    background-color: var(--primary-text-color);
+}
+
+.top-game-card img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.top-game-content {
+    padding: 1rem 2rem 2rem;
+    text-align: center;
+}
+
+.top-game-content p:nth-child(2) {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.top-game-content a.red-btn {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-game-content a {
+    color: var(--primary-text-color);
+}
+
+.top-game-content a:hover {
+    background-color: var(--primary-color);
 }
