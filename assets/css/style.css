@@ -123,6 +123,19 @@ a {
     position: absolute;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--button-color);
+}
+
+
 /* --------------------------------- Header --------------------------------- */
 .header {
     position: fixed;
@@ -226,7 +239,8 @@ a {
     width: 80%;
 }
 
-.banner-content input {
+.banner-content input,
+.subscribe .input-data input {
     font-family: SofadiOne;
     font-size: 1.25rem;
     padding: 1rem 2rem;
@@ -236,7 +250,8 @@ a {
     width: 100%;
 }
 
-.banner-content button {
+.banner-content button,
+.subscribe .input-data button {
     position: absolute;
     top: 0;
     right: 0;
@@ -251,7 +266,8 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-.banner-content button:hover {
+.banner-content button:hover,
+.subscribe .input-data button:hover {
     background-color: var(--primary-color);
 }
 
@@ -310,6 +326,12 @@ a {
     border-radius: 50%;
     background-color: var(--primary-color);
     margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-image:hover {
+    background-color: var(--button-color);
 }
 
 .card img {
@@ -359,6 +381,13 @@ a {
     padding: 0.5rem 1.5rem;
     border-radius: 5rem;
     text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tranding-heading a.red-btn:hover,
+.top-games-heading a.red-btn:hover {
+    background-color: var(--primary-color);
 }
 
 .tranding-card-wrapper {
@@ -412,10 +441,15 @@ a {
 .card-content span.red-btn {
     padding: 0.5rem;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
 }
 
 .card-content span.red-btn a {
     color: var(--primary-text-color);
+}
+
+.card-content span:hover {
+    background-color: var(--primary-color);
 }
 
 /* ---------------------------- Top Games section --------------------------- */
@@ -423,7 +457,7 @@ a {
     background-color: var(--background-color);
     padding: 8rem 0;
     border-radius: 10rem;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 }
 
 .top-games-wrapper {
@@ -466,4 +500,141 @@ a {
 
 .top-game-content a:hover {
     background-color: var(--primary-color);
+}
+
+/* --------------------------- Categories section --------------------------- */
+.categories {
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+}
+
+.categories .container {
+    padding: 0 1rem;
+}
+
+.categories-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.categories-header h6 {
+    font-size: 1.25rem;
+    color: var(--button-color);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.categories-header h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.categories-thumb-wrapper {
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.categories-thumb-wrapper .thumb {
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+}
+
+.categories-thumb-wrapper .thumb h4 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    color: var(--primary-text-color);
+}
+
+.categories-thumb-wrapper .thumb-img a {
+    width: 100%;
+}
+
+.categories-thumb-wrapper .thumb-img img {
+    width: 100%;
+    border-radius: 2rem;
+    object-fit: contain;
+}
+
+.cta {
+    padding-top: 5rem;
+}
+
+.cta .shop,
+.cta .subscribe {
+    margin-top: 5rem;
+    background-color: var(--background-color);
+}
+
+.cta .subscribe {
+    margin-top: 10rem;
+}
+
+.shop,
+.subscribe {
+    padding: 5rem;
+    border-radius: 2rem;
+}
+
+.shop-content h6,
+.subscribe-content h6 {
+    color: var(--button-color);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.shop-content h2,
+.subscribe-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.shop-content h2 span,
+.subscribe-content h2 span {
+    color: var(--primary-color);
+}
+
+.shop-content p {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    color: var(--button-color);
+}
+
+.shop-content a {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+
+.subscribe .input-data {
+    width: 100% !important;
+}
+
+.cta::after {
+    background-image: url(../images/cta-bg.jpg);
+    max-width: 550px;
+    max-height: 510px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-275px);
+    top: 5rem;
+    z-index: -1;
+}
+
+/* ----------------------------- footer section ----------------------------- */
+footer {
+    padding: 2rem 0 5rem;
+    text-align: center;
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+    font-size: 1.25rem;
+    border-radius: 5rem 5rem 0 0;
 }
