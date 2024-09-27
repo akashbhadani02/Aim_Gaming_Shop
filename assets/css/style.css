@@ -638,3 +638,62 @@ footer {
     font-size: 1.25rem;
     border-radius: 5rem 5rem 0 0;
 }
+
+
+
+/* ---------------------------- Registration.html --------------------------- */
+.reg-heading {
+    margin-top: 8rem;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    border-radius: 0 0 10rem 10rem;
+}
+
+.reg-heading .container {
+    text-align: center;
+    padding: 8rem 2rem;
+}
+
+.reg-heading h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.reg-heading p {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+/* ------------------------------ registration ------------------------------ */
+.registration {
+    margin: 5rem 0;
+}
+
+.left-side,
+.right-side {
+    padding: 3rem 2rem;
+    background-color: var(--background-color);
+    border-radius: 5rem;
+}
+
+.rg-content {
+    text-align: center;
+}
+
+.left-side h6 {
+    font-size: 1.25rem;
+    color: var(--button-color);
+    margin-bottom: 0.5rem;
+}
+
+.left-side h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.left-side p {
+    letter-spacing: 2px;
+    color: #3f3f3f;
+}
