@@ -23,25 +23,11 @@
     <!-- --------------------------- Header section ---------------------------- -->
     <section class="header">
         <header class="container d-flex space-between">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="./assets/images/logo.png" alt="Logo">
             </a>
             <div class="navbar">
                 <nav class="d-flex gap">
-                    <ul class="d-flex gap">
-                        <a href="#home">
-                            <li>home</li>
-                        </a>
-                        <a href="#games">
-                            <li>games</li>
-                        </a>
-                        <a href="#categories">
-                            <li>categories</li>
-                        </a>
-                        <a href="#contact-us">
-                            <li>contact us</li>
-                        </a>
-                    </ul>
                     <div class="btns d-flex gap">
                         <a href="./login.html" class="red-btn">login</a>
                         <a href="#" class="red-btn">sign-up</a>
@@ -73,9 +59,15 @@
                 </div>
             </div>
 
-            <div class="right-side">
-                <div class="rg-form">
-
+            <div class="right-side col-6">
+                <div class="form" id="sign-up-form">
+                    <h2 class="form-title">Sign Up</h2>
+                    <input type="text" class="input-std" id="email" placeholder="Email">
+                    <input type="text" class="input-half" id="first-name" placeholder="First Name">
+                    <input type="text" class="input-half" id="last-name" placeholder="Last Name">
+                    <input type="password" class="input-std" id="password" placeholder="Password">
+                    <input type="text" class="input-std" placeholder="Address">
+                    <button type="button" class="btn-submit" id="sign-up">Sign Up!</button>
                 </div>
             </div>
         </div>

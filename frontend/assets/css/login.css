@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     color: var(--primary-text-color);
     display: flex;
     flex-direction: column;
@@ -116,4 +116,32 @@ body {
 .form-control input:valid+label span {
     color: lightblue;
     transform: translateY(-30px);
+}
+
+.back_btn {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background: var(--background-color);
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--button-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.back_btn:hover {
+    background: var(--button-color);
+    color: var(--primary-text-color);
+}
+
+.back_btn .aerrow {
+    transition: all 0.3s ease;
+}
+
+.back_btn:hover .aerrow {
+    transform: translate(-5px, 0px);
 }
