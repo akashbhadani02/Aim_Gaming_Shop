@@ -10,7 +10,7 @@ const port = process.env.PORT || 7000;
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors("*"));
+app.use(cors());
 
 app.get("/", (req, res) => {
     res.status(200).send("API working..!")

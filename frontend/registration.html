@@ -60,14 +60,17 @@
             </div>
 
             <div class="right-side col-6">
-                <div class="form" id="sign-up-form">
+                <div class="form">
                     <h2 class="form-title">Sign Up</h2>
-                    <input type="text" class="input-std" id="email" placeholder="Email">
-                    <input type="text" class="input-half" id="first-name" placeholder="First Name">
-                    <input type="text" class="input-half" id="last-name" placeholder="Last Name">
-                    <input type="password" class="input-std" id="password" placeholder="Password">
-                    <input type="text" class="input-std" placeholder="Address">
-                    <button type="button" class="btn-submit" id="sign-up">Sign Up!</button>
+                    <form id="registration_form">
+                        <input type="text" class="input-std" id="email" placeholder="Email" required>
+                        <input type="text" class="input-half" id="f_name" placeholder="First Name" required>
+                        <input type="text" class="input-half" id="l_name" placeholder="Last Name" required>
+                        <input type="text" class="input-half" id="phone" placeholder="Mobile no." required>
+                        <input type="password" class="input-std" id="password" placeholder="Password" required>
+                        <input type="text" class="input-std" id="address" placeholder="Address" required>
+                        <button type="submit" class="btn-submit" id="sign-up">Sign Up!</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -82,6 +85,7 @@
         </div>
     </footer>
 
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
